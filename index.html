@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+    <title>Calculator Web Application </title>
 </head>
 <body>
-    
+    <form name="form1" class="calci" action="index.html" method="POST">
+        <input type="button" class="buttonDsgn" value="C" onclick="form1.answer.value =' '" >
+        <input type="button" class="buttonDsgn" value="<" onclick="form1.answer.value = form1.answer.value.substring(0,form1.answer.value.length*1 - 1) " >
+        
+        
+        
+        <input type="text" name="answer" id="display">
+        <input type="button" class="buttonDsgn" value="1" onclick="form1.answer.value+='1'" >
+        <input type="button" class="buttonDsgn" value="2" onclick="form1.answer.value+='2'" >
+        <input type="button" class="buttonDsgn" value="3" onclick="form1.answer.value+='3'" >
+        <input type="button" class="buttonDsgn" value="4" onclick="form1.answer.value+='4'" >
+        <input type="button" class="buttonDsgn" value="5" onclick="form1.answer.value+='5'" >
+        <input type="button" class="buttonDsgn" value="6" onclick="form1.answer.value+='6'" >
+        <input type="button" class="buttonDsgn" value="7" onclick="form1.answer.value+='7'" >
+        <input type="button" class="buttonDsgn" value="8" onclick="form1.answer.value+='8'" >
+        <input type="button" class="buttonDsgn" value="9" onclick="form1.answer.value+='9'" >
+        <input type="button" class="buttonDsgn" value="0" onclick="form1.answer.value+='0'" >
+        <input type="button" class="buttonDsgn" value="+" onclick="form1.answer.value+='+'" >
+        <input type="button" class="buttonDsgn" value="-" onclick="form1.answer.value+='-'" >
+        <input type="button" class="buttonDsgn" value="*" onclick="form1.answer.value+='*'" >
+        <input type="button" class="buttonDsgn" value="/" onclick="form1.answer.value+='/'" >
+        <input type="button" class="buttonDsgn" value="." onclick="form1.answer.value+='.'" >
+        <input type="button" class="buttonDsgn" value="=" onclick="form1.answer.value+='='" >
+        <input type="button" class="buttonDsgn" value="00" onclick="form1.answer.value+='00'" >
+    </form>
 </body>
 </html>
